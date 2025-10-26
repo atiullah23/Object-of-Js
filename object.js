@@ -1,19 +1,15 @@
-// const student={
-//     fullName:"Er Ashmir Khan",
-//     marks:94.4,
-//     printMarks:function(){
-//         console.log("marks=",this.marks);
-//     },
-// };
-
-const employee={
-calcTax(){
-    console.log("The empolyee Tas is 10%");
-}
-};
-
-const karanArjun={
-    salary:50000,
+class ToyotaCar{
+    start(){
+        console.log("start");
+    }
+    stop(){
+        console.log("stop");
+    }
+    setbrand(brand){
+        // this.setbrandName =>object property hai 
+        this.setbrandName=brand;//brand=>aur yeh arguments hai jo isme assign kiya jayega
+    }
 }
 
-karanArjun.__proto__=employee;
+let Fortuner=new ToyotaCar();
+Fortuner.setbrand("Tata");
