@@ -1,15 +1,18 @@
-class ToyotaCar{
+class Toyotacar{
+    constructor(brand,mileage){
+        console.log("Creating a new  car");
+        this.brand=brand;
+        this.mileage=mileage;
+    }
     start(){
         console.log("start");
     }
     stop(){
         console.log("stop");
     }
-    setbrand(brand){
-        // this.setbrandName =>object property hai 
-        this.setbrandName=brand;//brand=>aur yeh arguments hai jo isme assign kiya jayega
-    }
 }
 
-let Fortuner=new ToyotaCar();
-Fortuner.setbrand("Tata");
+let Fortuner=new Toyotacar("fortuner",10);
+console.log(Fortuner);
+let Tata= new Toyotacar("Kia",20);
+console.log(Tata);
